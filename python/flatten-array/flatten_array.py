@@ -23,5 +23,3 @@ def flatten(iterable):
     iterable = clean_iterable
 
     return iterable
-
-flatten([0, 2, [[2, 3], 8, [[100]], None, [[None]]], -2])
