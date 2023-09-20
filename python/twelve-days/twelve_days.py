@@ -31,5 +31,7 @@ def recite(start_verse, end_verse): # start_verse is the number of gifts to star
         # get the gifts for the current verse, and append
         verses.append(f"On the {day_list[i-1]} day of Christmas my true love gave to me: {get_gifts(i)}.")
 
-    print(verses)
+    # print(verses)
     return verses
+
+print(recite(5,6))
