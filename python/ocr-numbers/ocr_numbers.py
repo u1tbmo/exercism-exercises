@@ -31,7 +31,6 @@ def convert_to_4_rows(input_grid: list[str], qty: int) -> tuple:
         if i > 3:
             i = 0
 
-        # for _ in range(qty):
         # check the current index of the row to know what row to add the string to
         match i:
             case 0:
