@@ -94,8 +94,7 @@ def convert(input_grid: list[str]) -> str:
     # initialize output list
     output_list = []
 
-    # if the length of the output is greater than the qty of numbers that means there were multiple lines of numbers
-    # if so, for every qty, add a comma to the output, except if the comma is at the end
+    # if the quantity has changed, add commas in between every quantity numbers
     if qty > og_qty:
         # split the output into qty parts
         for i in range(og_qty):
