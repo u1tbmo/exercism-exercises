@@ -12,7 +12,7 @@ NUM_CHAR_ARRAY = [
 ]
 
 
-def convert_grid(grid_to_convert: list[str]):
+def convert_grid(grid_to_convert: list[str]) -> str:
     for i in range(len(NUM_CHAR_ARRAY)):
         if grid_to_convert == NUM_CHAR_ARRAY[i]:
             return str(i)
@@ -49,7 +49,7 @@ def convert_to_4_rows(input_grid: list[str], qty: int) -> tuple:
     return ([row1, row2, row3, row4], qty)
 
 
-def convert(input_grid: list[str]):
+def convert(input_grid: list[str]) -> str:
     # when the rows aren't multiples of 4
     if len(input_grid) % 4 != 0:
         raise ValueError("Number of input lines is not a multiple of four")
