@@ -1,8 +1,3 @@
-def validate_triplet(triplet):
-    a, b, c = triplet
-    return a**2 + b**2 == c**2
-
-
 def triplets_with_sum(number):
     list_of_triplets = []
 
@@ -12,6 +7,6 @@ def triplets_with_sum(number):
         for b in range(a + 1, number // 2):
             # since a + b + c = number, c = number - a - b using algebra
             c = number - a - b
-            if validate_triplet((a, b, c)):
+            if a**2 + b**2 == c**2:
                 list_of_triplets.append([a, b, c])
     return list_of_triplets
