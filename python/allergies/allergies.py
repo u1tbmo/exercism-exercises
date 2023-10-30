@@ -44,5 +44,3 @@ class Allergies:
             return True
         else:
             return False
-    
-print(Allergies(257).lst)
