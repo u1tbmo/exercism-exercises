@@ -26,17 +26,3 @@ def rectangles(strings: list[str]) -> int:
                         break
 
     return qty
-
-print(
-    rectangles(
-        [
-            "+-+ +-+",
-            "| | | |",
-            "+-+-+-+",
-            "  | |  ",
-            "+-+-+-+",
-            "| | | |",
-            "+-+ +-+",
-        ]
-    )
-)
