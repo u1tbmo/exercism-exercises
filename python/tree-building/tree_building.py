@@ -51,18 +51,3 @@ def BuildTree(records: list[Record]):
         raise ValueError("Record id is invalid or out of order.")
     
     return root
-    
-# TEST
-
-records = [
-            Record(6, 2),
-            Record(0, 0),
-            Record(3, 1),
-            Record(2, 0),
-            Record(4, 1),
-            Record(5, 2),
-            Record(1, 0)
-        ]
-root = BuildTree(records)
-print(root)
-    
