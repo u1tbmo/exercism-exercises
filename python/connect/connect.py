@@ -83,5 +83,5 @@ class ConnectGame:
                         ]
                         # Extend the stack with the possible neighbors
                         stack.extend([(row, col) for row, col in neighbors if 0 <= row < self.dimensions and 0 <= col < self.dimensions and board[row][col] == 'O'])
-        # Return False if no O has connected from left to right (the stack is empty)
+        # Return False if no O has connected from top to bottom (the stack is empty)
         return False
