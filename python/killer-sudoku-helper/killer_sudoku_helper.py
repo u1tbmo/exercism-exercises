@@ -6,14 +6,12 @@ def combinations(target: int, size: int, exclude: list[int]) -> list[list[int]]:
     else:
         exclude += [n for n in nums if n != target]
 
-    iter = 0
     while exclude != [1, 2, 3, 4, 5, 6, 7, 8, 9]:
         result, nums_to_exclude = find_combs(target, size, exclude.copy())
         if result:
             combination_list.append(result)
         exclude += [num for num in nums_to_exclude]
         exclude = sorted(list(set(exclude)))
-        iter += 1
 
     return combination_list
 
@@ -24,7 +22,6 @@ def find_combs(target: int, size: int, exclude: list[int]) -> tuple[list, list]:
     )
 
     result = []
-
     for num in nums:
         if target - num > 0 and size - 1 > 0:
             target -= num
