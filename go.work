@@ -1,6 +1,7 @@
 go 1.21.4
 
 use (
-	C:\Users\Euan\Exercism\go\hello-world
-	C:\Users\Euan\Exercism\go\lasagna
+	./go/annalyns-infiltration
+	./go/hello-world
+	./go/lasagna
 )
