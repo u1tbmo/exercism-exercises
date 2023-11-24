@@ -1,0 +1,6 @@
+go 1.21.4
+
+use (
+	C:\Users\Euan\Exercism\go\hello-world
+	C:\Users\Euan\Exercism\go\lasagna
+)
