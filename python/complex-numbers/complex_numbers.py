@@ -85,6 +85,3 @@ class ComplexNumber:
         return ComplexNumber(e**self.real, 0) * ComplexNumber(
             cos(self.imaginary), sin(self.imaginary)
         )
-
-
-print(f"{5 / ComplexNumber(1, 1)} | {ComplexNumber(2.5, -2.5)}")
