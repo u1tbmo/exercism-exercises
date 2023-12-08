@@ -13,9 +13,9 @@ class ComplexNumber:
         return self.real == other.real and self.imaginary == other.imaginary
 
     def __add__(self, other):
-        complex_other = other
-        if type(other) != ComplexNumber:
-            complex_other = ComplexNumber(other, 0)
+        complex_other = (
+            other if isinstance(other, ComplexNumber) else ComplexNumber(other, 0)
+        )
         return ComplexNumber(
             self.real + complex_other.real, self.imaginary + complex_other.imaginary
         )
@@ -24,9 +24,9 @@ class ComplexNumber:
         return self.__add__(other)
 
     def __mul__(self, other):
-        complex_other = other
-        if type(other) != ComplexNumber:
-            complex_other = ComplexNumber(other, 0)
+        complex_other = (
+            other if isinstance(other, ComplexNumber) else ComplexNumber(other, 0)
+        )
         return ComplexNumber(
             self.real * complex_other.real - self.imaginary * complex_other.imaginary,
             self.real * complex_other.imaginary + self.imaginary * complex_other.real,
@@ -36,25 +36,25 @@ class ComplexNumber:
         return self.__mul__(other)
 
     def __sub__(self, other):
-        complex_other = other
-        if type(other) != ComplexNumber:
-            complex_other = ComplexNumber(other, 0)
+        complex_other = (
+            other if isinstance(other, ComplexNumber) else ComplexNumber(other, 0)
+        )
         return ComplexNumber(
             self.real - complex_other.real, self.imaginary - complex_other.imaginary
         )
 
     def __rsub__(self, other):
-        complex_other = other
-        if type(other) != ComplexNumber:
-            complex_other = ComplexNumber(other, 0)
+        complex_other = (
+            other if isinstance(other, ComplexNumber) else ComplexNumber(other, 0)
+        )
         return ComplexNumber(
             complex_other.real - self.real, complex_other.imaginary - self.imaginary
         )
 
     def __truediv__(self, other):
-        complex_other = other
-        if type(other) != ComplexNumber:
-            complex_other = ComplexNumber(other, 0)
+        complex_other = (
+            other if isinstance(other, ComplexNumber) else ComplexNumber(other, 0)
+        )
         denominator = complex_other.real**2 + complex_other.imaginary**2
         return ComplexNumber(
             (self.real * complex_other.real + self.imaginary * complex_other.imaginary)
@@ -64,9 +64,9 @@ class ComplexNumber:
         )
 
     def __rtruediv__(self, other):
-        complex_other = other
-        if type(other) != ComplexNumber:
-            complex_other = ComplexNumber(other, 0)
+        complex_other = (
+            other if isinstance(other, ComplexNumber) else ComplexNumber(other, 0)
+        )
         denominator = self.real**2 + self.imaginary**2
         return ComplexNumber(
             (complex_other.real * self.real + complex_other.imaginary * self.imaginary)
