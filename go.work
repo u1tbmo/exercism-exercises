@@ -9,6 +9,7 @@ use (
 	./go/cars-assemble
 	./go/hello-world
 	./go/lasagna
+	./go/lasagna-master
 	./go/need-for-speed
 	./go/party-robot
 	./go/vehicle-purchase
