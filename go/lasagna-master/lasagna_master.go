@@ -1,4 +1,4 @@
-package lasagna
+package lasagna_master
 
 // PreparationTime calculates the preparation time of the lasagna.
 func PreparationTime(layers []string, time int) int {
