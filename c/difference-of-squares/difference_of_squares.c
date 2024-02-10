@@ -2,22 +2,15 @@
 
 unsigned int square_of_sum(unsigned int number)
 {
-    unsigned int sum = 0;
-    for (unsigned int i = 1; i <= number; i++)
-    {
-        sum += i;
-    }
+    // Gauss Summation
+    unsigned int sum = (number * (number + 1) / 2);
     return sum * sum;
 }
 
 unsigned int sum_of_squares(unsigned int number)
 {
-    unsigned int sum = 0;
-    for (unsigned int i = 1; i <= number; i++)
-    {
-        sum += (i * i);
-    }
-    return sum;
+    // Sum of Sequence of Squares
+    return (number * (number + 1) * (2 * number + 1)) / 6;
 }
 
 unsigned int difference_of_squares(unsigned int number)
