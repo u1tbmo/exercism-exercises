@@ -4,5 +4,9 @@
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter"
   },
-  "cmake.configureOnOpen": false
+  "cmake.configureOnOpen": false,
+  "files.associations": {
+    "*.rpy": "renpy",
+    "square_root.h": "c"
+  }
 }
