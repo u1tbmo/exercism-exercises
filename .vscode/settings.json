@@ -7,6 +7,7 @@
   "cmake.configureOnOpen": false,
   "files.associations": {
     "*.rpy": "renpy",
-    "square_root.h": "c"
+    "square_root.h": "c",
+    "rational_numbers.h": "c"
   }
 }
