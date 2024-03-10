@@ -8,6 +8,12 @@
   "files.associations": {
     "*.rpy": "renpy",
     "square_root.h": "c",
-    "rational_numbers.h": "c"
+    "rational_numbers.h": "c",
+    "list_ops.h": "c",
+    "reverse_string.h": "c",
+    "stdbool.h": "c",
+    "string.h": "c",
+    "circular_buffer.h": "c",
+    "stdint.h": "c"
   }
 }
