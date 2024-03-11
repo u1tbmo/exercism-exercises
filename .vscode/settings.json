@@ -14,6 +14,8 @@
     "stdbool.h": "c",
     "string.h": "c",
     "circular_buffer.h": "c",
-    "stdint.h": "c"
+    "stdint.h": "c",
+    "saddle_points.h": "c",
+    "allergies.h": "c"
   }
 }
