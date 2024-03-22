@@ -16,6 +16,9 @@
     "circular_buffer.h": "c",
     "stdint.h": "c",
     "saddle_points.h": "c",
-    "allergies.h": "c"
+    "allergies.h": "c",
+    "clock.h": "c",
+    "stdio.h": "c",
+    "phone_number.h": "c"
   }
 }
