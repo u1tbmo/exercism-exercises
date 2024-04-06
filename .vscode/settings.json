@@ -20,6 +20,8 @@
     "clock.h": "c",
     "stdio.h": "c",
     "phone_number.h": "c",
-    "stdlib.h": "c"
+    "stdlib.h": "c",
+    "stddef.h": "c",
+    "unity.h": "c"
   }
 }
