@@ -23,5 +23,9 @@
     "stdlib.h": "c",
     "stddef.h": "c",
     "unity.h": "c"
+  },
+  "java.format.settings.url": ".vscode/eclipse-java-google-style.xml",
+  "[java]": {
+    "editor.insertSpaces": true
   }
 }
