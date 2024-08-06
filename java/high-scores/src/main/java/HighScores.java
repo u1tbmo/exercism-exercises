@@ -15,7 +15,7 @@ class HighScores {
     }
 
     Integer latest() {
-        return this.highScores.getLast();
+        return this.highScores.get(highScores.size() - 1);
     }
 
     Integer personalBest() {
