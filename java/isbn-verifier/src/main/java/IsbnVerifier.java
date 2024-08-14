@@ -14,7 +14,7 @@ class IsbnVerifier {
         // Create a List of Characters filtering invalid characters
         List<Character> filteredString =
                 IntStream.range(0, stringToVerify.length()).mapToObj(i -> stringToVerify.charAt(i))
-                        .filter(c -> (Character.isDigit(c) | c == 'X')).toList();
+                        .filter(c -> (Character.isDigit(c) || c == 'X')).toList();
 
         // Recheck the length of the string
         if (filteredString.size() != 10) {
