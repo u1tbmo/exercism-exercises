@@ -8,7 +8,7 @@ export const colorCode = (color: Color) => {
 
 // This function accepts a tuple of colors with at least two Colors
 export function decodedValue(colors: [Color, Color, ...Color[]]) {
-  let result = colors.slice(0, 2).map(colorCode).join("");
+  const result = colors.slice(0, 2).map(colorCode).join("");
   return parseInt(result);
 }
 
